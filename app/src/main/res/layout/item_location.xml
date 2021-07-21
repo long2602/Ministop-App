@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="8sp"
+    android:layout_marginStart="12dp"
+    android:layout_marginBottom="12dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/itemlocation_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="948/43/1, Lê đức Thọ, F15, Gò Vấp, TP.HCM"
+            android:textStyle="bold"
+            android:textColor="@color/vang"></TextView>
+        <TextView
+            android:id="@+id/itemlocation_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mở cả ngày"
+            android:textColor="@color/vang"></TextView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

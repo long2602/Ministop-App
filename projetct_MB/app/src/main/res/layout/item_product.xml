@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="188dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    cardElevation="10dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginBottom="12dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/itemProduct_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/miy">
+        </ImageView>
+        <TextView
+            android:id="@+id/itemProduct_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mỳ ý bò bằm sốt cà chua lfomgogoogoggbbg"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/itemProduct_price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="22.000 VNĐ"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="14dp"></TextView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

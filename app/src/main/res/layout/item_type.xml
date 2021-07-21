@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    cardElevation="10dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginBottom="12dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/itemcategory_imgView"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/banh"
+            android:scaleType="fitXY"></ImageView>
+        <TextView
+            android:textAlignment="center"
+            android:id="@+id/itemcategory_txtView_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bánh mì mè"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:paddingTop="4dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="4dp"
+            android:textStyle="bold"
+            ></TextView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

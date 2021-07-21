@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DetailProductActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/xanh"
+        android:paddingEnd="46dp"
+        >
+        <ImageButton
+            android:id="@+id/main_btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_back"
+            >
+        </ImageButton>
+        <TextView
+            android:id="@+id/main_txt_script"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mì ý"
+            android:textColor="@color/vang"
+            android:textSize="20dp"
+            android:layout_marginStart="10dp"
+
+            >
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.9">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/detail_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/miy"></ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/detail_txt_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mì ý bò bằm sốt cà chua"
+                        android:textColor="@color/black"
+                        android:textSize="26sp"
+                        android:textStyle="bold"
+                        ></TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/icon_money"
+                            android:layout_gravity="center">
+                        </ImageView>
+                        <TextView
+                            android:id="@+id/detail_txt_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22.000 VNĐ"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:paddingStart="4dp"
+                            ></TextView>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/detail_txt_des"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bánh mì ốp la ở đây ngon, trưa nào mìjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                        jjjjj ăn bánh mì ốp la ở đây, nhiều khi cũng hay ăn xôi nữa, bánh bao cũng ok lắm luôn. Ở đây còn có bánh ngọt nữa mà chưa thử bao giờ!ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        ></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:layout_weight="1.1"
+        android:background="@drawable/background_domo">
+        <Button
+            android:id="@+id/detail_btn_them"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="thêm vào giỏ hàng"
+            android:background="@drawable/btn_themgiohang"
+            android:textColor="@color/white"
+            android:layout_marginEnd="5dp"></Button>
+        <Button
+            android:id="@+id/detail_btn_mua"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Mua ngay"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/btn_muangay"
+            android:textSize="18dp">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
